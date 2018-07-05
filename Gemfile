@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.7.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.4.3'
 gem 'bootstrap-sass', '~>3.3.7'
+gem 'acts_as_votable', '~> 0.11.1'
+
 group :development, :test do
   gem 'sqlite3','~>1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
