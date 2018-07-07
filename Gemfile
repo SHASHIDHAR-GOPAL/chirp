@@ -38,6 +38,7 @@ gem 'bootstrap-sass', '~>3.3.7'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'simple_form', '~> 4.0.1'
 gem 'record_tag_helper', '~> 1.0'
+gem 'punching_bag', '~> 0.6.0'
 
 group :development, :test do
   gem 'sqlite3','~>1.3.13'

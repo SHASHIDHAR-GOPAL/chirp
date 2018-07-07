@@ -1,13 +1,14 @@
 <div class="page-header">
   <h1><a href="<%= @link.url %>"><%= @link.title %></a><br>
     <small>Submitted by <%= @link.user.email %></small>
+    <span class = "pull-right" ><small>No. of views: <%= @link.hits %></small></span>
   </h1>
 </div>
 
 <% if @link.user == current_user -%>
   <div class="btn-group pull-right">
     <%= link_to 'Edit', edit_link_path(@link), class: "btn btn-default" %>
-    <%= link_to 'Destroy', @link, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %>
+    <%= link_to 'Delete', @link, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %>
   </div>
 <% end %>
 

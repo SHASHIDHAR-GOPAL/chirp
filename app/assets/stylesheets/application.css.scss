@@ -34,6 +34,9 @@
 #main_content {
   #content {
     float: none;
+    a:hover{
+      text-decoration: none;
+    }
   }
   padding-bottom: 100px;
   .link {
