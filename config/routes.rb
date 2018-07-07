@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "links#index"
   resources :comments
   devise_for :users
   resources :links do
@@ -8,6 +9,5 @@ Rails.application.routes.draw do
     end
     resources :comments
   end
-  root "links#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

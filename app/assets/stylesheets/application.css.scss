@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -24,7 +23,11 @@
   letter-spacing: -1px;
   padding: 15px 0;
   a {
-    color: #2F363E;
+    color: #0d3258;
+  }
+  a:hover {
+    color: #25406c;
+    text-decoration: none;
   }
 }
 
