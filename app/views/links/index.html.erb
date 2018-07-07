@@ -1,7 +1,7 @@
 <% @links.sort_by.reverse_each do |link| %>
   <div class="link row clearfix">
     <h2>
-      <%= link_to link.title, link %><br>
+      <%= link_to link.title, link.url %><br>
       <small class="author">Submitted <%= time_ago_in_words(link.updated_at) %> ago by <%= link.user.email %></small>
     </h2>
 
@@ -15,6 +15,12 @@
         <span class="glyphicon glyphicon-chevron-down"></span>
         Downvote
         <%= link.get_downvotes.size %>
+      <% end %>
+    </div>
+
+    <div class="btn-group pull-right">
+      <%= link_to link, class: "btn btn-primary" do %>
+      Comments
       <% end %>
     </div>
   </div>

@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # POST /comments
   # POST /comments.json
@@ -24,7 +25,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
     respond_to do |format|
-      format.html {redirect_to comments_url, notice: 'Comment was successfully destroyed.'}
+      format.html {redirect_back fallback_location: link_url, notice: 'Comment was successfully destroyed.'}
       format.json {head :no_content}
     end
   end
