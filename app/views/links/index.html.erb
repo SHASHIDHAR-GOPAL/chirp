@@ -1,3 +1,18 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<div class="btn-group btn-group-right">
+  <button type="button" class="btn btn-sm btn-danger">Sort by</button>
+  <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="">Trending</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="">Recent</a></li>
+  </ul>
+</div>
+
 <% @links.sort_by.reverse_each do |link| %>
   <div class="link row clearfix">
     <h2>

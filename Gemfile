@@ -39,9 +39,13 @@ gem 'acts_as_votable', '~> 0.11.1'
 gem 'simple_form', '~> 4.0.1'
 gem 'record_tag_helper', '~> 1.0'
 gem 'punching_bag', '~> 0.6.0'
+gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
 
 group :development, :test do
   gem 'sqlite3','~>1.3.13'
+  gem 'dotenv-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -52,6 +56,7 @@ group :development do
   gem 'listen','~>3.1.5'
   gem 'spring','~>2.0.2'
   gem 'spring-watcher-listen','~>2.0.1'
+  gem 'dotenv', '~> 2.2.1'
 end
 
 group :test do

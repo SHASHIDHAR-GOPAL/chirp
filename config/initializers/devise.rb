@@ -283,5 +283,5 @@ Devise.setup do |config|
   #
 
   config.secret_key = '8f8e05b823a0f183448213cb14abbffe84a62d44f43501ad892e30add320606ef29cc44a9ec840094c10e61dc5e9931ad67c09cabdffd512d621a1152be4561f'
-
+  config.omniauth :twitter, 'TWITTER_APP_ID', 'TWITTER_APP_SECRET'
 end
